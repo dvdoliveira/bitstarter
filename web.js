@@ -7,7 +7,7 @@ var buf = new Buffer(inputfile);
 var out = buf.toString(0,buffer.length);
 
 app.get('/', function(request, response) {
-  response.send(inputfile);
+  response.send(out);
 });
 
 var port = process.env.PORT || 5000;
