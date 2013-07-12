@@ -1,14 +1,17 @@
 var express = require('express');
 var app = express.createServer(express.logger());
 
-var fs  = require('fs');
-var inputfile = fs.readFileSync('index.html');
-var buf = new Buffer(inputfile);
-var out = buf.toString(0,buffer.length);
+//var fs  = require('fs');
+//var inputfile = fs.readFileSync('index.html');
+//var buf = new Buffer(inputfile);
+//var out = buf.toString(0,buffer.length);
 
-app.get('/', function(req, res) {
-  res.set('Content-Type', 'text/html');
-  res.send('out');
+app.get('/', function(request, response) {
+  var fs = require('fs');
+  var inputfile = fs.readfileSync('index.html');
+  var buf = new Buffer(inputfile);
+  var out = buf.toString(0;buffer.length);
+  response.send('out');
 });
 
 Var port = process.env.PORT || 5000;
