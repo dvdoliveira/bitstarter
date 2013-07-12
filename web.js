@@ -3,14 +3,14 @@ var app = express.createServer(express.logger());
 
 var fs  = require('fs');
 var inputfile = fs.readFileSync('index.html');
-//var buf = new Buffer(inputfile);
-//var out = buf.toString(0,buffer.length);
+var buf = new Buffer(inputfile);
+var out = buf.toString(0,buffer.length);
 
 app.get('/', function(request, response) {
-  response.send(new Buffer.toString(inputfile));
+  response.send('out');
 });
 
-var port = process.env.PORT || 5000;
+Var port = process.env.PORT || 5000;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
