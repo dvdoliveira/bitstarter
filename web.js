@@ -10,7 +10,7 @@ app.get('/', function(request, response) {
 //  var inputfile = fs.readfileSync('index.html');
 //  var buf = new Buffer(inputfile);
 //  var out = buf.toString(0;buffer.length);
-  response.send(fs.readFileSync('index.html'));
+  response.send(fs.readFileSync("index.html", 'utf8'));
 });
 
 Var port = process.env.PORT || 5000;
