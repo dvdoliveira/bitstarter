@@ -5,7 +5,7 @@
     <title>Melhora SP - Cidadãos reunidos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
@@ -94,8 +94,19 @@
 		line-height: 300px;
 		vertical-align: middle;
 	    text-align: center;
-	    border: black dotted;
 	    color: grey;
+      }
+      .asset-icon-small {
+		font-size: 80px;
+		line-height: 292px;
+		vertical-align: middle;
+	    text-align: center;
+	    color: rgba(255,0,0,0.75);
+	    border-color: rgba(0,0,0,0.3);
+	    border-style: solid;
+      }
+      .asset-icon small {
+		font-size: 80px;
       }
       .footer {
        color: #cccccc;
@@ -146,7 +157,10 @@
 		</div>
 		<div class="row-fluid pitch">
 			<div class="span5 offset1 video">
-				<img class="img-polaroid" src="http://placehold.it/480x300">
+    		<div class="asset-icon-small">
+				<i class="icon-youtube-play"></i>
+    		</div>
+				
 			</div>
 			<div class="span5 actions">
 				<div class="span10 offset1">
@@ -197,21 +211,52 @@
     	<div class="span5 copy">
     		<h3>O que é o Melhora SP?</h3>
     		<p>
-    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum  eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    		O Melhora SP é uma iniciativa de pessoas que acreditam que a cidade de São Paulo pode ser muito melhor se a população se envolver diretamente na identificação, comunicação e acompanhamento dos principais problemas da cidade até que sejam solucionados pelas autoridades. 
     		</p>
+    		<p>Se você também acredita nisso então o Melhora SP é para você!</p>
     	</div>
     </div>
     
     <div class="row-fluid section2">
     	<div class="span5 offset1 copy copy-right">
+    		<h3>Como funciona?</h3>
     		<p>
-    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    		O Melhora SP é uma plataforma tecnológica (website + aplicativo) e funciona de forma muito simples:
     		</p>
+    		<ol>
+	    		<li>Os cidadãos identificam e comunicam problemas que encontram na cidade</li>
+	    		<li>As autoridades são informadas dos problemas e atuam para resolvê-los</li>
+	    		<li>Quando um problema é resolvido o cidadão que o identificou é informado e recebe pontos</li>
+	    		<li>Os pontos acumulados podem ser trocados por prêmios das empresas parceiras do Melhora SP</li>
+    		</ol>
     	</div>
 		<div class="span5 asset">
-			<img class="img-polaroid" src="http://placehold.it/480x300">
+			<!-- <img class="img-polaroid" src="http://placehold.it/480x300"> -->
+			<div class="asset-icon">
+				<i class="icon-puzzle-piece icon-fixed-width"></i>
+			</div>
 		</div>
     </div>
+    
+    <div class="row-fluid section3">
+    	<div class="span5 offset1 asset">
+    		<div class="asset-icon">
+    	<!--	<img class="img-polaroid" src="http://placehold.it/480x300"> -->
+				<i class="icon-thumbs-up"></i>
+    		</div>
+    	</div>
+    	<div class="span5 copy">
+    		<h3>Como contribuir?</h3>
+    		<p>
+    		O Melhora SP é um projeto inicial que necessita de um pequeno investimento para acontecer. Se você acredita na nossa visão, então contribua conosco e ajude-nos a criar uma São Paulo melhor para se viver. Você pode contribuir de duas formas:
+    		</p>
+    		<ol>
+    			<li>Fazendo uma pequena contribuição para a realização do projeto</li>
+    			<li>Compartilhando esta página e espalhando essa idéia</li>
+    		</ol>
+    		<p>Se você acredita que podemos criar uma São Paulo melhor, participe!</p>
+    	</div>
+    </div>    
     
     <div class="row-fluid faq">
     	<div class="span10 offset1">
@@ -220,27 +265,63 @@
     				<div class="accordion-group">
     					<div class="accordion-heading">
     						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-    							What FAQ stand for?
+    							O Melhora SP é um projeto ou já existe algo desenvolvido?
     						</a>
     					</div>
     					<div id="collapseOne" class="accordion-body collapse">
     						<div class="accordion-inner">
-    							Frequently Asked Question.
+    							O Melhora SP está em desenvolvimento. Na fase atual está em construção a solução tecnológica que será utilizada pelas autoridades da cidade de São Paulo (Prefeitura, Sabesp, CET, etc.) para que possam acompanhar os problemas reportados pelos cidadãos e informar quando uma solução estiver implementada. Também já estão desenhadas as telas que serão desenvolvidas para o website e o aplicativo que será utilizado pelos cidadãos. 
     						</div>
     					</div>
     				</div>
     				<div class="accordion-group">
     					<div class="accordion-heading">
     						<a class="accordion-toggle" data-toggle="collapse" data-parent="accordion2" href="#collapseTwo">
-    							What is a frequently asked question?
+    							Como serão utilizados os recursos que estão sendo solicitados? 
     						</a>
     					</div>
     					<div id="collapseTwo" class="accordion-body collapse">
     						<div class="accordion-inner">
-    							A question which is commonly asked by users.
+    							Caso o Melhora SP atinja completamente o valor que está sendo solicitado, os recursos serão investidos na construção do website e do aplicativo para os cidadãos e para a integração da solução tecnológica para uso das autoridades com os sistemas já existentes nesses órgãos. Também serão utilizados para formalização jurídica do Melhora SP e criação dos contratos de parceria com os órgãos competentes. 
     						</div>
     					</div>
     				</div>
+    				<div class="accordion-group">
+    					<div class="accordion-heading">
+    						<a class="accordion-toggle" data-toggle="collapse" data-parent="accordion2" href="#collapseThree">
+    							O que acontece se o Melhora SP não conseguir captar todos os recursos necessários? 
+    						</a>
+    					</div>
+    					<div id="collapseThree" class="accordion-body collapse">
+    						<div class="accordion-inner">
+    							O Melhora SP trabalhará com um sistema de reservas, onde aqueles que quiserem contribuir poderão se registrar e informar o valor que pretendem contribuir. Nesse momento serão informados os dados de cartão de crédito para pagamento, porém será feita apenas um débito de reserva (similar ao débito que hotéis e locadoras de veículos fazem). Se todos os recursos forem captados, quem contribuiu é informado que o débito será efetivado definitivamente no cartão de crédito. Caso contrário o débito reserva é cancelado e nenhum valor será debitado do cartão de crédito que quem contribuiu.  
+    						</div>
+    					</div>
+    				</div>
+    				<div class="accordion-group">
+    					<div class="accordion-heading">
+    						<a class="accordion-toggle" data-toggle="collapse" data-parent="accordion2" href="#collapseFour">
+    							E se o Melhora SP conseguir angariar mais recursos do que o necessário? 
+    						</a>
+    					</div>
+    					<div id="collapseFour" class="accordion-body collapse">
+    						<div class="accordion-inner">
+    							Caso sejam angariados mais recursos do que o necessário, o Melhora SP irá aplicar tais recursos para acelerar o desenvolvimento da solução e integrar mais órgãos públicos do que o previsto.   
+    						</div>
+    					</div>
+    				</div>
+    				<div class="accordion-group">
+    					<div class="accordion-heading">
+    						<a class="accordion-toggle" data-toggle="collapse" data-parent="accordion2" href="#collapseFive">
+    							Quais órgãos públicos estarão envolvidos com o Melhora SP?
+    						</a>
+    					</div>
+    					<div id="collapseFive" class="accordion-body collapse">
+    						<div class="accordion-inner">
+    							Inicialmente estarão envolvidos a Prefeitura de SP, através da secretaria de Transportes e Vias Públicas, a Companhia de Engenharia de Tráfego e a Sabesp. No futuro o objetivo é adicionar outras secretarias e companhias prestadoras de serviços públicos.   
+    						</div>
+    					</div>
+    				</div>	
     			</div>
     	</div>
     </div>
